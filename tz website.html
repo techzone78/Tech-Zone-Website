@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Zone - Mobile Repair & Services</title>
+    <meta name="description" content="Tech Zone offers expert mobile repair services in New Town, Kolkata. Check repair status, explore services, and contact us easily.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tech Zone</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#status">Check Status</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <h2>Welcome to Tech Zone</h2>
+        <p>Expert mobile repair services in New Town, Kolkata. Fast, reliable, and affordable repairs.</p>
+    </section>
+    
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Screen Replacement</li>
+            <li>Battery Replacement</li>
+            <li>Software Troubleshooting</li>
+            <li>Water Damage Repair</li>
+        </ul>
+    </section>
+    
+    <section id="status">
+        <h2>Check Repair Status</h2>
+        <input type="text" id="orderId" placeholder="Enter your Order ID">
+        <button onclick="checkStatus()">Check Status</button>
+        <p id="statusResult"></p>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>📍 Jatragachi, Purbapara, New Town Action Area 2, Kolkata 700161</p>
+        <p>📞 <a href="tel:+917439849449">Call Us: +91 7439849449</a></p>
+        <p>💬 <a href="https://api.whatsapp.com/message/5AF5TVETPI4JB1?autoload=1&app_absent=0">Chat on WhatsApp</a></p>
+    </section>
+    
+    <script>
+        function checkStatus() {
+            let orderId = document.getElementById("orderId").value;
+            let result = document.getElementById("statusResult");
+            
+            if (orderId === "12345") {
+                result.textContent = "Your repair is complete!";
+            } else {
+                result.textContent = "Order not found. Please check again.";
+            }
+        }
+    </script>
+</body>
+</html>
